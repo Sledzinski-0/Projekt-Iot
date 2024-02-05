@@ -28,10 +28,10 @@ public class WplataController {
         this.wplataCommand = wplataCommand;
     }
 
-    @RequestMapping("/wplata")
+    @RequestMapping("/wplata/list")
     public String getWplata(Model model) {
         model.addAttribute("wplata", wplataRepo.findAll());
-        return "wplata/list.html";
+        return "wplata/list";
     }
 
     @GetMapping("/wplata/new")

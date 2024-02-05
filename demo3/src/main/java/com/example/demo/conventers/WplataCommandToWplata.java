@@ -15,9 +15,10 @@ public class WplataCommandToWplata implements Converter<WplataCommand, Wplata> {
     @Override
     public Wplata convert(WplataCommand source) {
         final Wplata wplata=new Wplata();
+        wplata.setId(source.getId());
         wplata.setPaymentDay(source.getPaymentDay());
         wplata.setVolume(source.getVolume());
 
-        return null;
+        return wplata;
     }
 }

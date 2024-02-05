@@ -14,10 +14,11 @@ public class WyplataCommandToWyplata implements Converter<WyplataCommand, Wyplat
     @Nullable
     @Override
     public Wyplata convert(WyplataCommand source) {
-        final Wyplata wplata=new Wyplata();
-        wplata.setData(source.getData());
-        wplata.setIlosc(source.getIlosc());
+        final Wyplata wyplata=new Wyplata();
+        wyplata.setId(source.getId());
+        wyplata.setData(source.getData());
+        wyplata.setIlosc(source.getIlosc());
 
-        return null;
+        return wyplata;
     }
 }

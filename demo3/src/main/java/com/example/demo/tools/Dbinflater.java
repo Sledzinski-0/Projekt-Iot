@@ -26,14 +26,14 @@ public class Dbinflater implements ApplicationListener<ContextRefreshedEvent> {
     }
     ;
     private void initData(){
-        Wplata johnny =new Wplata("100","10.05.2023");
-        Wplata dave =new Wplata("1000","10.05.2023");
-        Wplata Monkey =new Wplata("50","10.05.2023");
+        Wplata johnny =new Wplata("100","2023-05-10");
+        Wplata dave =new Wplata("1000","2023-05-10");
+        Wplata Monkey =new Wplata("50","2023-05-10");
 
 
-        Wyplata aqua= new Wyplata("100","10.05.2023");
-        Wyplata wood= new Wyplata("500","21.01.2023");
-        Wyplata man= new Wyplata("150","5.05.2023");
+        Wyplata aqua= new Wyplata("100","2023-01-12");
+        Wyplata wood= new Wyplata("500","2023-01-11");
+        Wyplata man= new Wyplata("150","2023-03-5");
 
         johnny.getWyplatas().add(aqua);
         dave.getWyplatas().add(wood);

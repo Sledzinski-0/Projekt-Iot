@@ -46,8 +46,8 @@
         <td th:text="${wplata.volume}">1</td>
         <td th:text="${wplata.paymentDay}">1</td>
         <td>
-            <a href="#" th:href="@{'/wplata/'+${wplata.id}+'/edit'}" role="button" class="btn btn-primary">Edit</a>
-            <a href="#" th:href="@{'/wplata/'+${wplata.id}+'/show'}" role="button" class="btn btn-primary">Show</a>
+            <a  th:href="@{'/wplata/'+${wplata.id}+'/edit'}" role="button" class="btn btn-primary">Edit</a>
+            <a  th:href="@{'/wplata/'+${wplata.id}+'/show'}" role="button" class="btn btn-primary">Show</a>
 
         </td>
     </tr>
@@ -55,6 +55,7 @@
 
 <div class="add-button">
     <a href="#" th:href="@{'/wplata/new'}" role="button" class="btn btn-success" style="margin-right: 5px">Dodaj wpłate</a>
+    <a href="#" th:href="@{'/'}" role="button" class="btn btn-success" style="margin-right: 5px">Powrót na start</a>
 </div>
 
 </body>

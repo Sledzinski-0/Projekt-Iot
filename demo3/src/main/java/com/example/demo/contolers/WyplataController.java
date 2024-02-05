@@ -23,10 +23,10 @@ public class WyplataController {
         this.wyplataCommand = wyplataCommand;
     }
 
-    @RequestMapping("/wyplata")
+    @RequestMapping("/wyplata/list")
     public String getWplata(Model model) {
         model.addAttribute("wyplata", wyplataRepo.findAll());
-        return "wyplata/1.html";
+        return "wyplata/list";
     }
 
     @GetMapping("/wyplata/new")
